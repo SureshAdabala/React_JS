@@ -1,0 +1,17 @@
+Components : 
+1. It is a reusable of UI Code.
+2. It returns the jsx Code. 
+
+Rules of creating of JSX :
+1. Single Parent Element-> Only one element(div) in return the jsx Code.
+2. class in the place of className. Because class is reserved name.
+3. the Attributes are in CamelCase.
+4. Enclosing correct.
+5. Javascript code is write in flower brackets.
+6. Style will gives in Object format.
+Eg : <div style={{
+color: "red"}}>
+                <h1>Name: Suresh</h1>
+                <h1>Age: {true?10:20}</h1>
+                <h1>Batch : 65R</h1>
+            </div>
