@@ -1,0 +1,7 @@
+Life Cycle Methods
+1. ComponentDidMount : calls First Reload
+	constructor --> render --> componentDidAmount
+2. componentDidUpdate : calls state Update
+	render --> componentDidUpdate
+3. componentWillUnmount : class Page Removing time
+	constructor --> render --> componentWillUnmount                                                             
