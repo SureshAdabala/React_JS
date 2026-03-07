@@ -1,0 +1,114 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", sans-serif;
+}
+
+/* Black Background */
+
+body{
+height:100vh;
+background:#0f0f0f;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+
+/* Container */
+
+.register-container{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* Glass Card */
+
+.glass-card{
+width:360px;
+padding:35px;
+
+background: rgba(255,255,255,0.08);
+border-radius:16px;
+
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+
+border:1px solid rgba(255,255,255,0.15);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+/* Title */
+
+.glass-card h2{
+text-align:center;
+margin-bottom:10px;
+letter-spacing:1px;
+}
+
+/* Labels */
+
+.glass-card label{
+font-size:14px;
+color:#ccc;
+}
+
+/* Inputs */
+
+.glass-card input{
+padding:10px;
+border-radius:8px;
+border:1px solid rgba(255,255,255,0.2);
+background: rgba(255,255,255,0.05);
+color:white;
+outline:none;
+transition:0.3s;
+}
+
+/* Input focus */
+
+.glass-card input:focus{
+border-color:#1ae86a;
+box-shadow:0 0 8px rgba(26,232,106,0.4);
+}
+
+/* Button */
+
+.glass-card button{
+margin-top:15px;
+padding:12px;
+border:none;
+border-radius:8px;
+
+background:#1ae86a;
+color:black;
+
+font-weight:bold;
+font-size:15px;
+
+cursor:pointer;
+transition:0.3s;
+}
+
+/* Button hover */
+
+.glass-card button:hover{
+background:#06cc53;
+transform:translateY(-2px);
+}
+
+/* Error */
+
+.error{
+color:#ff4d4d;
+font-size:14px;
+margin-top:5px;
+}

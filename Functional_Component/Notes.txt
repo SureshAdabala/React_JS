@@ -1,0 +1,30 @@
+useState() -- Manage the Functional Component and creating a state.
+
+Syntax : const[value, setValue] = useState(true)
+
+value --> storing value
+setValue --> updating the value it is a Function.
+true -- default Value stored the value parameter.
+
+
+useEffect - Handles the life cycle methods of function.
+-------------------------------------------------------
+Syntax : 
+1. useEffect(()=>{
+
+});
+-->Worked as componentDidUpdate
+
+***********************************
+2. useEffect(()=>{
+
+},[]);
+-->Worked as componentDidMount
+
+************************************
+3. useEffect(()=>{
+    return ()=>{}; //returns the arrow function
+},[]);
+-->Worked as componentWillUnmount
+
+************************************
