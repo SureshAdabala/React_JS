@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Login.css";
 
 function Login() {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [err, setErr] = useState(false);
@@ -11,55 +10,69 @@ function Login() {
     try {
       event.preventDefault();
 
-      let res = await fetch(`http://localhost:3001/user?email=${email}`);
+      let res = await fetch(`http://localhost:3002/user?email=${email}`);
       let jsonRes = await res.json();
 
       if (jsonRes.length === 0) {
         setErr(true);
         return;
-      } 
-      else {
+      } else {
         if (password === jsonRes[0].password) {
-          console.log("Login Successful");
+          localStorage.setItem("Login_user", jsonRes[0].id);
+          alert("Login Successful");
           setErr(false);
-        } 
-        else {
+        } else {
           setErr(true);
         }
       }
-
     } catch (error) {
       console.log(error.message);
     }
   };
 
   return (
-    <div className="login-container">
+    <div className="login-page">
 
-      <form className="glass-card" onSubmit={onFormSubmit}>
+      <div className="login-clay-card">
 
-        <h2>Sign In</h2>
+        <div className="login-header">
+          <div className="login-icon-wrapper">🔐</div>
+          <h2>Sign In</h2>
+          <p className="login-subtitle">Welcome back! Please login to continue</p>
+        </div>
 
-        <label>Email</label>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
+        <form onSubmit={onFormSubmit}>
 
-        <label>Password</label>
-        <input
-          type="password"
-          placeholder="Enter your password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          <div className="login-input-group">
+            <label>Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
 
-        {err && <p className="error">Invalid Credentials</p>}
+          <div className="login-input-group">
+            <label>Password</label>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
 
-        <button type="submit">Sign In</button>
+          {err && <p className="login-error-msg">Invalid Credentials</p>}
 
-      </form>
+          <button type="submit" className="login-submit-btn">
+            Sign In
+          </button>
+        </form>
 
+      </div>
     </div>
   );
 }
