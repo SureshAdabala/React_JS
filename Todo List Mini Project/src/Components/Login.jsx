@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import "./Login.css";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [err, setErr] = useState(false);
+
+  const navigate = useNavigate()
 
   const onFormSubmit = async (event) => {
     try {
@@ -20,6 +22,7 @@ function Login() {
         if (password === jsonRes[0].password) {
           localStorage.setItem("Login_user", jsonRes[0].id);
           alert("Login Successful");
+          navigate("/")
           setErr(false);
         } else {
           setErr(true);
@@ -31,22 +34,20 @@ function Login() {
   };
 
   return (
-    <div className="login-page">
-
-      <div className="login-clay-card">
-
-        <div className="login-header">
-          <div className="login-icon-wrapper">🔐</div>
-          <h2>Sign In</h2>
-          <p className="login-subtitle">Welcome back! Please login to continue</p>
-        </div>
+    <div className="auth-page">
+      <div className="glass-panel" style={{maxWidth: '450px'}}>
+        <section style={{textAlign: 'center', marginBottom: '2rem'}}>
+          <div style={{fontSize: '3rem', marginBottom: '1rem'}}>🔐</div>
+          <h2 className="section-title" style={{marginBottom: '0.5rem'}}>Sign In</h2>
+          <p className="subtitle">Welcome back! Please login to continue</p>
+        </section>
 
         <form onSubmit={onFormSubmit}>
-
-          <div className="login-input-group">
-            <label>Email</label>
+          <div className="form-group">
+            <label className="form-label">Email</label>
             <input
               type="email"
+              className="input-field"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -54,10 +55,11 @@ function Login() {
             />
           </div>
 
-          <div className="login-input-group">
-            <label>Password</label>
+          <div className="form-group">
+            <label className="form-label">Password</label>
             <input
               type="password"
+              className="input-field"
               placeholder="Enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -65,13 +67,13 @@ function Login() {
             />
           </div>
 
-          {err && <p className="login-error-msg">Invalid Credentials</p>}
+          {err && <p style={{color: '#ff5555', marginBottom: '1rem', textAlign: 'center', fontWeight: 'bold'}}>Invalid Credentials</p>}
 
-          <button type="submit" className="login-submit-btn">
-            Sign In
-          </button>
+          <button type="submit" className="btn btn-primary" style={{width: '100%', marginTop: '1rem'}}>Sign In</button>
         </form>
-
+        <h3 style={{textAlign: 'center', marginTop: '1.5rem', fontSize: '1rem', color: 'var(--text-dim)', fontWeight: '400'}}>
+          Don't have an Account? <Link to="/register" style={{color: 'var(--secondary)', fontWeight: '600'}}>Sign up</Link>
+        </h3>
       </div>
     </div>
   );

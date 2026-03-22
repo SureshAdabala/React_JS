@@ -11,6 +11,18 @@
       "username": "Manoj",
       "email": "manoj@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "3bc1",
+      "username": "durga",
+      "email": "durga@gmail.com",
+      "password": "durga"
+    },
+    {
+      "id": "d1f6",
+      "username": "Manoj",
+      "email": "manoj1@gmail.com",
+      "password": "123456"
     }
   ],
   "todos": [
@@ -31,9 +43,23 @@
     {
       "id": "a121",
       "task": "Learn Boot",
-      "isCompleted": false,
+      "isCompleted": true,
       "date": "17/03/2026, 16:18:55",
       "user_id": "ed78"
+    },
+    {
+      "id": "7462",
+      "task": "Learn AWS",
+      "isCompleted": false,
+      "date": "22/03/2026, 15:35:46",
+      "user_id": "ed78"
+    },
+    {
+      "id": "93af",
+      "task": "Learn Java ",
+      "isCompleted": false,
+      "date": "22/03/2026, 15:50:15",
+      "user_id": "d1f6"
     }
   ]
 }

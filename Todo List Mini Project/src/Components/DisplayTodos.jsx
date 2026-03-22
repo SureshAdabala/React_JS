@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./DisplayTodos.css";
+import { Link } from "react-router-dom";
 
 function DisplayTodos() {
 
@@ -55,36 +55,38 @@ function DisplayTodos() {
   }, [tasks]);
 
   return (
-
     <div className="todo-container">
+      <h2 className="section-title">All Todos</h2>
 
-      <h2>All Todos</h2>
-
-      {tasks.length === 0 && (
-        <div className="todo-empty">
-          <span>📝</span>
-          No tasks yet — add one above!
+      {tasks.length === 0 ? (
+        <div className="glass-panel empty-state">
+          <span className="empty-icon">📝</span>
+          <p>No tasks yet — add one above!</p>
+        </div>
+      ) : (
+        <div className="todo-grid">
+          {tasks.map((item) => (
+            <div key={item.id} className="todo-card">
+              <div className="todo-info">
+                <div className={`status-dot ${item.isCompleted ? 'status-completed' : 'status-pending'}`}></div>
+                <Link to={`/todo/${item.id}`}>
+                  <p className="todo-text" style={{textDecoration: item.isCompleted ? 'line-through' : 'none', color: item.isCompleted ? 'var(--text-dim)' : 'white'}}>
+                    {item.task}
+                  </p>
+                </Link>
+              </div>
+              <div className="todo-actions">
+                <button className={`btn ${item.isCompleted ? 'btn-secondary' : 'btn-primary'}`} style={{padding: '0.4rem 0.8rem', fontSize: '0.85rem'}} onClick={() => OnMarkedBtn(item.id)}>
+                  {item.isCompleted ? "Undo" : "Complete"}
+                </button>
+                <button className="btn btn-danger" style={{padding: '0.4rem 0.8rem', fontSize: '0.85rem'}} onClick={() => OnDeleteBtn(item.id)}>
+                  Delete
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
       )}
-
-      {tasks.map((item) => (
-
-        <div className={`todo-card${item.isCompleted ? " completed" : ""}`} key={item.id}>
-
-          <p className="todo-task-text">{item.task}</p>
-
-          <div className="todo-buttons">
-
-            <button className="todo-delete-btn" onClick={() => OnDeleteBtn(item.id)}>Delete</button>
-
-            <button className="todo-mark-btn" onClick={() => OnMarkedBtn(item.id)}>
-              {item.isCompleted
-                ? "Completed"
-                : "Mark as Completed"}
-            </button>
-          </div>
-        </div>
-      ))}
     </div>
   );
 }

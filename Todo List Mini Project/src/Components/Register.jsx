@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import "./Register.css";
+import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [err, setErr] = useState(false);
+
+  const navigate = useNavigate()
 
   const onFormSubmit = async (event) => {
     try {
@@ -37,6 +39,7 @@ function Register() {
         setUsername("");
         setEmail("");
         setPassword("");
+        navigate("/login")
       }
     } catch (error) {
       console.log(error);
@@ -44,22 +47,20 @@ function Register() {
   };
 
   return (
-    <div className="register-page">
-
-      <div className="register-clay-card">
-
-        <div className="register-header">
-          <div className="register-icon-wrapper">🌱</div>
-          <h2>Create Account</h2>
-          <p className="register-subtitle">Join us today — it's free!</p>
-        </div>
+    <div className="auth-page">
+      <div className="glass-panel" style={{ maxWidth: '450px' }}>
+        <section style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🌱</div>
+          <h2 className="section-title" style={{ marginBottom: '0.5rem' }}>Create Account</h2>
+          <p className="subtitle">Join us today — it's free!</p>
+        </section>
 
         <form onSubmit={onFormSubmit}>
-
-          <div className="register-input-group">
-            <label>Username</label>
+          <div className="form-group">
+            <label className="form-label">Username</label>
             <input
               type="text"
+              className="input-field"
               placeholder="Enter your name"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -67,10 +68,11 @@ function Register() {
             />
           </div>
 
-          <div className="register-input-group">
-            <label>Email</label>
+          <div className="form-group">
+            <label className="form-label">Email</label>
             <input
               type="email"
+              className="input-field"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -78,10 +80,11 @@ function Register() {
             />
           </div>
 
-          <div className="register-input-group">
-            <label>Password</label>
+          <div className="form-group">
+            <label className="form-label">Password</label>
             <input
               type="password"
+              className="input-field"
               placeholder="Enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -89,13 +92,13 @@ function Register() {
             />
           </div>
 
-          {err && <p className="register-error-msg">User Already Exists</p>}
+          {err && <p style={{ color: '#ff5555', marginBottom: '1rem', textAlign: 'center', fontWeight: 'bold' }}>User Already Exists</p>}
 
-          <button type="submit" className="register-submit-btn">
-            Sign Up
-          </button>
+          <button type="submit" className="btn btn-primary" style={{ width: '100%', marginTop: '1rem' }}>Sign Up</button>
         </form>
-
+        <h3 style={{ textAlign: 'center', marginTop: '1.5rem', fontSize: '1rem', color: 'var(--text-dim)', fontWeight: '400' }}>
+          Already have an account? <Link to="/login" style={{ color: 'var(--secondary)', fontWeight: '600' }}>Login</Link>
+        </h3>
       </div>
     </div>
   );
