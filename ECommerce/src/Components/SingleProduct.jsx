@@ -7,7 +7,7 @@ function SingleProduct() {
     useEffect(()=>{
         async function getSingleData() {
             try {
-                let res = await fetch(`https://fakestoreapi.com/products/${id}`);
+                let res = await fetch(`http://localhost:3002/products/${id}`);
                 let jsonRes = await res.json();
                 setData(jsonRes)
             } catch (error) {

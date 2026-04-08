@@ -1,0 +1,166 @@
+{
+    "products":[
+        [
+  {
+    "id": 1,
+    "title": "Men's Casual T-Shirt",
+    "price": 499,
+    "description": "Comfortable cotton t-shirt for daily wear",
+    "category": "men's clothing",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 2,
+    "title": "Men's Formal Shirt",
+    "price": 899,
+    "description": "Slim fit formal shirt",
+    "category": "men's clothing",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 3,
+    "title": "Women's Kurti",
+    "price": 699,
+    "description": "Stylish ethnic wear",
+    "category": "women's clothing",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 4,
+    "title": "Women's Jeans",
+    "price": 1199,
+    "description": "Comfort stretch denim",
+    "category": "women's clothing",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 5,
+    "title": "Smartphone",
+    "price": 15999,
+    "description": "Latest Android smartphone",
+    "category": "electronics",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 6,
+    "title": "Laptop",
+    "price": 45999,
+    "description": "High performance laptop",
+    "category": "electronics",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 7,
+    "title": "Gold Necklace",
+    "price": 25999,
+    "description": "Elegant gold necklace",
+    "category": "jewelery",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 8,
+    "title": "Silver Ring",
+    "price": 1999,
+    "description": "Stylish silver ring",
+    "category": "jewelery",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 9,
+    "title": "Men's Jacket",
+    "price": 1999,
+    "description": "Winter wear jacket",
+    "category": "men's clothing",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 10,
+    "title": "Women's Top",
+    "price": 599,
+    "description": "Trendy summer top",
+    "category": "women's clothing",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 11,
+    "title": "Bluetooth Headphones",
+    "price": 2499,
+    "description": "Wireless sound experience",
+    "category": "electronics",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 12,
+    "title": "Smart Watch",
+    "price": 3499,
+    "description": "Fitness tracking smartwatch",
+    "category": "electronics",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 13,
+    "title": "Diamond Earrings",
+    "price": 15999,
+    "description": "Premium diamond earrings",
+    "category": "jewelery",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 14,
+    "title": "Men's Jeans",
+    "price": 1299,
+    "description": "Regular fit jeans",
+    "category": "men's clothing",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 15,
+    "title": "Women's Saree",
+    "price": 1999,
+    "description": "Traditional silk saree",
+    "category": "women's clothing",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 16,
+    "title": "Tablet",
+    "price": 12999,
+    "description": "Portable tablet device",
+    "category": "electronics",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 17,
+    "title": "Men's Shoes",
+    "price": 2499,
+    "description": "Running shoes",
+    "category": "men's clothing",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 18,
+    "title": "Women's Handbag",
+    "price": 1599,
+    "description": "Stylish handbag",
+    "category": "women's clothing",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 19,
+    "title": "Camera",
+    "price": 29999,
+    "description": "DSLR camera",
+    "category": "electronics",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 20,
+    "title": "Bracelet",
+    "price": 999,
+    "description": "Fashion bracelet",
+    "category": "jewelery",
+    "image": "https://via.placeholder.com/200"
+  }
+]
+    ]
+}
