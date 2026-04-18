@@ -1,0 +1,189 @@
+{ 
+    "products" :[
+  {
+    "id": 1,
+    "name": "Apple",
+    "description": "Fresh red apples from Himachal",
+    "price": 120,
+    "quantity": 50,
+    "category": "Fruits",
+    "image": "https://tse2.mm.bing.net/th/id/OIP.NwlFmAVYQxzAvMYb5qyb2QHaHz?pid=Api&P=0&h=180"
+  },
+  {
+    "id": 2, 
+    "name": "Banana",
+    "description": "Organic ripe bananas",
+    "price": 60,
+    "quantity": 100,
+    "category": "Fruits",
+    "image": "https://source.unsplash.com/featured/?banana,fruit"
+  },
+  {
+    "id": 3,
+    "name": "Orange",
+    "description": "Juicy Nagpur oranges",
+    "price": 80,
+    "quantity": 70,
+    "category": "Fruits",
+    "image": "https://source.unsplash.com/featured/?orange,fruit"
+  },
+  {
+    "id": 4,
+    "name": "Mango",
+    "description": "Sweet Alphonso mangoes",
+    "price": 200,
+    "quantity": 40,
+    "category": "Fruits",
+    "image": "https://source.unsplash.com/featured/?mango,fruit"
+  },
+  {
+    "id": 5,
+    "name": "Pineapple",
+    "description": "Fresh tropical pineapple",
+    "price": 90,
+    "quantity": 30,
+    "category": "Fruits",
+    "image": "https://source.unsplash.com/featured/?pineapple,fruit"
+  },
+
+  {
+    "id": 6,
+    "name": "Tomato",
+    "description": "Farm fresh tomatoes",
+    "price": 30,
+    "quantity": 150,
+    "category": "Vegetables",
+    "image": "https://source.unsplash.com/featured/?tomato,vegetable"
+  },
+  {
+    "id": 7,
+    "name": "Potato",
+    "description": "Premium quality potatoes",
+    "price": 25,
+    "quantity": 200,
+    "category": "Vegetables",
+    "image": "https://source.unsplash.com/featured/?potato,vegetable"
+  },
+  {
+    "id": 8,
+    "name": "Onion",
+    "description": "Fresh red onions",
+    "price": 35,
+    "quantity": 180,
+    "category": "Vegetables",
+    "image": "https://source.unsplash.com/featured/?onion,vegetable"
+  },
+  {
+    "id": 9,
+    "name": "Carrot",
+    "description": "Crunchy carrots",
+    "price": 40,
+    "quantity": 90,
+    "category": "Vegetables",
+    "image": "https://source.unsplash.com/featured/?carrot,vegetable"
+  },
+  {
+    "id": 10,
+    "name": "Cabbage",
+    "description": "Fresh green cabbage",
+    "price": 20,
+    "quantity": 60,
+    "category": "Vegetables",
+    "image": "https://source.unsplash.com/featured/?cabbage,vegetable"
+  },
+
+  {
+    "id": 11,
+    "name": "Milk",
+    "description": "Full cream milk 1L",
+    "price": 55,
+    "quantity": 100,
+    "category": "Dairy",
+    "image": "https://source.unsplash.com/featured/?milk,dairy"
+  },
+  {
+    "id": 12,
+    "name": "Curd",
+    "description": "Fresh homemade curd",
+    "price": 50,
+    "quantity": 80,
+    "category": "Dairy",
+    "image": "https://source.unsplash.com/featured/?yogurt,curd"
+  },
+  {
+    "id": 13,
+    "name": "Butter",
+    "description": "Salted butter 500g",
+    "price": 250,
+    "quantity": 40,
+    "category": "Dairy",
+    "image": "https://source.unsplash.com/featured/?butter,dairy"
+  },
+
+  {
+    "id": 14,
+    "name": "Rice",
+    "description": "Premium basmati rice 5kg",
+    "price": 600,
+    "quantity": 60,
+    "category": "Grocery",
+    "image": "https://source.unsplash.com/featured/?rice,grain"
+  },
+  {
+    "id": 15,
+    "name": "Wheat Flour",
+    "description": "Whole wheat atta 5kg",
+    "price": 250,
+    "quantity": 90,
+    "category": "Grocery",
+    "image": "https://source.unsplash.com/featured/?wheat,flour"
+  },
+  {
+    "id": 16,
+    "name": "Sugar",
+    "description": "Refined sugar 1kg",
+    "price": 45,
+    "quantity": 120,
+    "category": "Grocery",
+    "image": "https://source.unsplash.com/featured/?sugar,ingredient"
+  },
+
+  {
+    "id": 17,
+    "name": "Salt",
+    "description": "Iodized salt 1kg",
+    "price": 20,
+    "quantity": 200,
+    "category": "Grocery",
+    "image": "https://source.unsplash.com/featured/?salt,ingredient"
+  },
+  {
+    "id": 18,
+    "name": "Cooking Oil",
+    "description": "Sunflower oil 1L",
+    "price": 150,
+    "quantity": 75,
+    "category": "Grocery",
+    "image": "https://source.unsplash.com/featured/?cooking-oil,oil"
+  },
+  {
+    "id": 19,
+    "name": "Eggs",
+    "description": "Farm fresh eggs pack of 12",
+    "price": 90,
+    "quantity": 100,
+    "category": "Poultry",
+    "image": "https://source.unsplash.com/featured/?eggs,poultry"
+  },
+
+  {
+    "id": 20,
+    "name": "Chicken",
+    "description": "Fresh chicken 1kg",
+    "price": 220,
+    "quantity": 40,
+    "category": "Meat",
+    "image": "https://source.unsplash.com/featured/?chicken,meat"
+  }
+]
+}
